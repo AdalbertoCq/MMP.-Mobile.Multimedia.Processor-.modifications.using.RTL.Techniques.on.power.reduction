@@ -1,0 +1,28 @@
+ 
+****************************************
+Report : area
+Design : Enhanced_CG_DC_EX_All
+Version: G-2012.06
+Date   : Mon Mar 25 20:06:08 2013
+****************************************
+
+Library(s) Used:
+
+    gscl45nm (File: /home/aclaudio/Desktop/ECE530_HW3/HW3/sim/gscl45nm.db)
+
+Number of ports:                         2473
+Number of nets:                          8345
+Number of cells:                         6537
+Number of combinational cells:           5882
+Number of sequential cells:               655
+Number of macros:                           0
+Number of buf/inv:                       2685
+Number of references:                      14
+
+Combinational area:       14277.513608
+Noncombinational area:    6535.471939
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:          20812.985547
+Total area:                 undefined
+1

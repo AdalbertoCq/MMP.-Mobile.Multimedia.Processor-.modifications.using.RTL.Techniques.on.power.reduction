@@ -1,0 +1,59 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Enhanced_CG_DC_EX_8bits
+Version: G-2012.06
+Date   : Mon Mar 25 17:26:44 2013
+****************************************
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: pipe_DC_EX_stall_in
+              (input port clocked by clk_main_in)
+  Endpoint: l1/out_reg (positive level-sensitive latch clocked by clk_main_in')
+  Path Group: clk_main_in
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_main_in (rise edge)            0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 f
+  pipe_DC_EX_stall_in (in)                 0.17       0.27 f
+  U7008/Y (INVX2)                          0.86       1.13 r
+  U6982/Y (INVX2)                          1.00       2.12 f
+  U7304/Y (NAND3X1)                        0.33       2.45 r
+  U5169/Y (BUFX2)                          0.02       2.47 r
+  U4694/Y (OR2X1)                          0.05       2.53 r
+  U6007/Y (INVX1)                          0.02       2.54 f
+  U7317/Y (AOI22X1)                        0.04       2.58 r
+  l1/out_reg/D (LATCH)                     0.00       2.58 r
+  data arrival time                                   2.58
+
+  clock clk_main_in' (rise edge)           5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  l1/out_reg/CLK (LATCH)                   0.00       5.00 r
+  time borrowed from endpoint              0.00       5.00
+  data required time                                  5.00
+  -----------------------------------------------------------
+  data required time                                  5.00
+  data arrival time                                  -2.58
+  -----------------------------------------------------------
+  slack (MET)                                         2.42
+
+  Time Borrowing Information
+  -----------------------------------------------
+  clk_main_in' pulse width                 5.00   
+  library setup time                      -0.18   
+  -----------------------------------------------
+  max time borrow                          4.82   
+  actual time borrow                       0.00   
+  -----------------------------------------------
+
+
+1

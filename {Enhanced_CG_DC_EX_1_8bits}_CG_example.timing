@@ -1,0 +1,82 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Enhanced_CG_DC_EX_1_8bits
+Version: G-2012.06
+Date   : Mon Mar 25 19:55:14 2013
+****************************************
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: EW_DC_EX_tr_0_rs1_846_in
+              (input port clocked by clk_main_in)
+  Endpoint: l1/out_reg (positive level-sensitive latch clocked by clk_main_in')
+  Path Group: clk_main_in
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_main_in (rise edge)            0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  EW_DC_EX_tr_0_rs1_846_in (in)            0.07       0.17 r
+  U6621/Y (OR2X1)                          0.05       0.22 r
+  U6620/Y (INVX1)                          0.02       0.25 f
+  U6603/Y (AND2X1)                         0.05       0.30 f
+  U6602/Y (INVX1)                          0.01       0.30 r
+  U4755/Y (OR2X1)                          0.05       0.35 r
+  U6622/Y (INVX1)                          0.02       0.37 f
+  U6605/Y (AND2X1)                         0.05       0.42 f
+  U6604/Y (INVX1)                          0.01       0.43 r
+  U4440/Y (OR2X1)                          0.06       0.48 r
+  U6651/Y (INVX1)                          0.03       0.51 f
+  U7090/Y (AND2X1)                         0.08       0.59 f
+  U7103/Y (AOI22X1)                        0.06       0.65 r
+  U4279/Y (BUFX2)                          0.04       0.68 r
+  U4249/Y (AND2X1)                         0.04       0.72 r
+  U6258/Y (INVX1)                          0.02       0.74 f
+  U7104/Y (AOI21X1)                        0.02       0.76 r
+  U6344/Y (INVX1)                          0.02       0.78 f
+  U5769/Y (OR2X1)                          0.04       0.82 f
+  U7106/Y (AOI22X1)                        0.03       0.85 r
+  U4209/Y (BUFX2)                          0.04       0.88 r
+  U4201/Y (AND2X1)                         0.03       0.91 r
+  U6645/Y (INVX1)                          0.03       0.94 f
+  U7308/Y (MUX2X1)                         0.03       0.98 f
+  U7309/Y (OAI21X1)                        0.02       1.00 r
+  U7310/Y (AOI21X1)                        0.02       1.01 f
+  U4194/Y (BUFX2)                          0.03       1.05 f
+  U7311/Y (NAND3X1)                        0.03       1.08 r
+  U4192/Y (BUFX2)                          0.04       1.11 r
+  U7312/Y (NOR3X1)                         0.02       1.13 f
+  U7313/Y (AOI22X1)                        0.03       1.16 r
+  l1/out_reg/D (LATCH)                     0.00       1.16 r
+  data arrival time                                   1.16
+
+  clock clk_main_in' (rise edge)           5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  l1/out_reg/CLK (LATCH)                   0.00       5.00 r
+  time borrowed from endpoint              0.00       5.00
+  data required time                                  5.00
+  -----------------------------------------------------------
+  data required time                                  5.00
+  data arrival time                                  -1.16
+  -----------------------------------------------------------
+  slack (MET)                                         3.84
+
+  Time Borrowing Information
+  -----------------------------------------------
+  clk_main_in' pulse width                 5.00   
+  library setup time                      -0.18   
+  -----------------------------------------------
+  max time borrow                          4.82   
+  actual time borrow                       0.00   
+  -----------------------------------------------
+
+
+1

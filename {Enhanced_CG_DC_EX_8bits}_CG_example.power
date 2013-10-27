@@ -1,0 +1,50 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : Enhanced_CG_DC_EX_8bits
+Version: G-2012.06
+Date   : Mon Mar 25 17:26:45 2013
+****************************************
+
+
+Library(s) Used:
+
+    gscl45nm (File: /home/aclaudio/Desktop/ECE530_HW3/HW3/sim/gscl45nm.db)
+
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =   1.2918 mW   (99%)
+  Net Switching Power  =  11.9665 uW    (1%)
+                         ---------
+Total Dynamic Power    =   1.3037 mW  (100%)
+
+Cell Leakage Power     = 129.2289 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network  1.2250e-04        4.7391e-03          157.8006        5.0194e-03  (   0.35%)
+register           1.2759        7.6314e-04        6.6608e+04            1.3433  (  93.74%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  1.5726e-02        6.4642e-03        6.2463e+04        8.4653e-02  (   5.91%)
+--------------------------------------------------------------------------------------------------
+Total              1.2918 mW     1.1966e-02 mW     1.2923e+05 nW         1.4330 mW
+1

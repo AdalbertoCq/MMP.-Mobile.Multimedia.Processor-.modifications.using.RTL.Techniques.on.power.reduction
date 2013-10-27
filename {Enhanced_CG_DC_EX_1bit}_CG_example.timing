@@ -1,0 +1,56 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Enhanced_CG_DC_EX_1bit
+Version: G-2012.06
+Date   : Mon Mar 25 16:02:51 2013
+****************************************
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: pipe_DC_EX_stall_in
+              (input port clocked by clk_main_in)
+  Endpoint: l2/out_reg (positive level-sensitive latch clocked by clk_main_in')
+  Path Group: clk_main_in
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_main_in (rise edge)            0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.10       0.10 r
+  pipe_DC_EX_stall_in (in)                 0.77       0.87 r
+  U5414/Y (BUFX2)                          0.48       1.35 r
+  U6878/Y (INVX1)                          0.55       1.91 f
+  U7084/Y (OAI21X1)                        0.22       2.13 r
+  U7085/Y (AOI21X1)                        0.06       2.19 f
+  l2/out_reg/D (LATCH)                     0.00       2.19 f
+  data arrival time                                   2.19
+
+  clock clk_main_in' (rise edge)           5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  l2/out_reg/CLK (LATCH)                   0.00       5.00 r
+  time borrowed from endpoint              0.00       5.00
+  data required time                                  5.00
+  -----------------------------------------------------------
+  data required time                                  5.00
+  data arrival time                                  -2.19
+  -----------------------------------------------------------
+  slack (MET)                                         2.81
+
+  Time Borrowing Information
+  -----------------------------------------------
+  clk_main_in' pulse width                 5.00   
+  library setup time                       0.56   
+  -----------------------------------------------
+  max time borrow                          5.56   
+  actual time borrow                       0.00   
+  -----------------------------------------------
+
+
+1
